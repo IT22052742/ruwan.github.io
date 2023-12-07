@@ -1,53 +1,61 @@
+<!-- HTML file for the website -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Student Details</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Welcome to My Cyber Security Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#works">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="home">
-    <h1>Welcome to Your Portfolio!</h1>
-    <p>Here you can showcase your skills and projects.</p>
-  </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Add your details here describing yourself as a cyber security student.</p>
+        </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write something about yourself here...</p>
-  </section>
+        <section id="works">
+            <h2>My Works</h2>
+            <div class="works-container">
+                <!-- Work items will be dynamically added here using JavaScript -->
+            </div>
+        </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Description of project 1...</p>
-    </div>
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Description of project 2...</p>
-    </div>
-    <!-- Add more project sections as needed -->
-  </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your.email@example.com</p>
-    <p>Phone: +1234567890</p>
-    <!-- Add any other contact information or a contact form here -->
-  </section>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-  <script src="script.js"></script>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cyber Security Student Portfolio</p>
+    </footer>
+
+    <script src="app.js"></script> <!-- Link to external JavaScript file -->
 </body>
+
 </html>
